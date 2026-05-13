@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Doctor Patient Portal
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        Doctor Patient
+        Communication Portal
+    </h1>
+
+</header>
+
+<div class="container">
+
+    <!-- Appointment -->
+
+    <div class="card">
+
+        <h2>
+            Book Appointment
+        </h2>
+
+        <input
+        type="text"
+
+        id="patientName"
+
+        placeholder="Patient Name">
+
+        <input
+        type="text"
+
+        id="doctorName"
+
+        placeholder="Doctor Name">
+
+        <input
+        type="date"
+
+        id="appointmentDate">
+
+        <button
+        onclick="bookAppointment()">
+
+            Book
+
+        </button>
+
+    </div>
+
+    <!-- Chat -->
+
+    <div class="card">
+
+        <h2>
+            Secure Chat
+        </h2>
+
+        <textarea
+        id="message"
+
+        placeholder="Enter Message">
+        </textarea>
+
+        <button
+        onclick="sendMessage()">
+
+            Send
+
+        </button>
+
+    </div>
+
+    <!-- Prescription -->
+
+    <div class="card">
+
+        <h2>
+            Prescription
+        </h2>
+
+        <input
+        type="text"
+
+        id="medicine"
+
+        placeholder="Medicine">
+
+        <textarea
+        id="dosage"
+
+        placeholder="Dosage">
+        </textarea>
+
+        <button
+        onclick="createPrescription()">
+
+            Generate
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
